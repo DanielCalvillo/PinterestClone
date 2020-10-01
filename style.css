@@ -1,106 +1,118 @@
 /* Estilos del header */
-* {
+Estilos del header * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 html {
   font-size: 62.5%;
 }
-
 .header {
   border: black 0px solid;
-  width: 100vw;
+  width: 100%;
   display: flex;
-  margin: 2rem;
+  margin: 0rem;
   align-items: center;
+  padding: 0rem;
 }
-
 /* left navigation styles */
 .pinterestlogo {
   height: 3rem;
-  width: 3rem;
+  width: 5rem;
 }
-
+.pinterestlogo:hover {
+  background-color: #efefef;
+  border-radius: 50%;
+}
 .left-nav {
   display: flex;
-  width: 15%;
+  width: 25%;
   align-items: center;
   justify-content: space-around;
+  margin-left: 1rem;
 }
-
-.left-nav-item {
+.left-nav-item:active {
   height: 6rem;
   width: 8rem;
   color: white;
   background-color: black;
-  border: 2px solid;
-  border-radius: 50px;
+  border: none;
+  border-radius: 30px;
   text-align: center;
-  padding-top: 1.3rem;
+  padding-top: 0rem;
 }
-
 /* Buscador central */
-
 .buscador {
   width: 70%;
   height: 6rem;
   border-radius: 50px;
+  align-items: center;
+  margin: 1rem;
+  padding-left: 3rem;
 }
-
 /* right navigation styles */
-
 .right-nav {
   width: 15%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-right: 4rem;
+  border: green 0px solid;
+  padding-left: 2rem;
 }
-
 .right-nav-button {
   height: 3rem;
   width: 3rem;
 }
-
 .right-nav-profile {
   height: 2.5rem;
   width: 2.5rem;
 }
-
 .right-nav-button:hover {
   background-color: #efefef;
 }
-
 .list-input {
   height: 2rem;
   width: 2rem;
   margin-right: 3rem;
 }
-
 /* Estilos del grid */
-
-@media screen and (max-width: 980px) {
-  /* propiedades CSS a aplicar en ventanas de 980px o menos */
-}
-@media screen and (max-width: 650px) {
-  /* propiedades CSS a aplicar en ventanas de 650px o menos */
-}
-@media screen and (max-width: 480px) {
-  /* propiedades CSS a aplicar en ventanas de 480px o menos */
-}
 
 .main-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .row {
   display: flex;
-  width: 21%;
   flex-direction: column;
+  align-items: center;
   margin: 1rem 1rem 1rem 1rem;
+}
+
+.one {
+  order: 1;
+  width: 18%;
+}
+
+.two {
+  order: 2;
+  width: 18%;
+}
+
+.three {
+  order: 3;
+  width: 18%;
+}
+
+.four {
+  order: 4;
+  width: 20%;
+}
+
+.five {
+  order: 5;
+  width: 20%;
 }
 
 .image-container {
@@ -128,4 +140,120 @@ html {
 .grid-image:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+  .main-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .one {
+    order: 1;
+    width: 18%;
+  }
+
+  .two {
+    order: 2;
+    width: 18%;
+  }
+
+  .three {
+    order: 3;
+    width: 18%;
+  }
+
+  .four {
+    order: 4;
+    width: 18%;
+  }
+
+  .five {
+    order: 5;
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .main-container {
+    justify-content: center;
+  }
+  .one {
+    order: 1;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .tablet-image {
+    width: 20%;
+    height: 100%;
+  }
+  .two {
+    order: 2;
+    width: 20%;
+  }
+
+  .three {
+    order: 3;
+    width: 20%;
+  }
+
+  .four {
+    order: 4;
+    width: 20%;
+  }
+
+  .five {
+    order: 5;
+    width: 20%;
+  }
+  /* propiedades CSS a aplicar en ventanas de 980px o menos */
+}
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    justify-content: center;
+  }
+  .tablet-image {
+    width: 100%;
+  }
+  .one {
+    order: 1;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+  }
+
+  .two {
+    order: 2;
+    width: 40%;
+  }
+
+  .three {
+    order: 3;
+    width: 40%;
+  }
+
+  .four {
+    order: 4;
+    width: 40%;
+  }
+
+  .five {
+    order: 5;
+    width: 100%;
+  }
+  .last {
+    width: 35rem;
+    height: 30rem;
+  }
+  /* propiedades CSS a aplicar en ventanas de 480px o menos */
 }

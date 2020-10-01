@@ -1,8 +1,8 @@
 body{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,icomoon;
     position: relative;
     box-sizing: border-box;
 }
@@ -54,7 +54,7 @@ body{
 /* estilos al contenedor de whats, share y save*/
 .buttons_right{
     width: 70%;
-    justify-content: center;
+    justify-content: flex-end;
 }
 /* margen izquierdo a los elementos hijos del contenedor derecho*/
 .buttons_right >*{
@@ -109,6 +109,9 @@ section{
 }
 article{
     margin-top: 5px;
+}
+.article_desktop{
+    display: none;
 }
 .image{
     width: 100%;
@@ -175,9 +178,118 @@ hr{
     cursor: pointer;
     width: 100%;
 }
+/*  nav_down   */
+.contenedor_nav_down{
+    height: 48px;
+    width: 100%;
+    position: relative;
+}
+.nav_down{
+    height: 48px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.863);
+    bottom: 0px;
+}
 
-@media screen and (min-width: 760){
-    body{
-        background-color: tomato;
+.ul_list_down{
+    height: 48px;
+    margin: 0px;
+    padding: 0px 2px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul_list_down a{
+    height: 48px;
+    width: auto;
+    text-decoration: none;
+    margin: 0px 5px;
+    padding: 0px 1px;
+}
+
+.ul_list_down a:hover{
+    background-color: rgba(128, 128, 128, 0.555);
+    box-sizing: border-box;
+    padding: 0px 30px;
+    border-radius: 10px;
+}
+.ul_list_down li{
+    height: 48px;
+    list-style: none;
+    color: #767676;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.ul_list_down .home_list{
+    color: black;
+}
+.home_list::before{
+    content: "\e900";
+    font-size: 1.5rem;
+}
+.video_list::before{
+    content: "\f144";
+    font-size: 1.6rem;
+
+}
+.not_list::before{
+    content: "\e951";
+    font-size: 1.6rem;
+}
+.saved_list::before{
+    content: "\f2be";
+    font-size: 1.6rem;
+    color: blue;
+}
+@media screen and (min-width: 760px){
+    .sect_up{
+        width: 600px;
+        margin: 0px auto;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .ul_list_down{
+        justify-content: space-evenly;
+    }
+}
+@media screen and (min-width: 760px){
+    .gallery{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .sect_up{
+        width: 1016px;
+        height: 821px;
+        display: flex;
+        margin: 0px auto;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px #767676, inset 2px 2px 5px #767676 ;
+    }
+    .tittle{
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 15px 0px;
+    }
+    .image{
+        width: 468px;
+        margin: 15px;
+    }
+
+    .image img{
+        border-radius: 20px;
+    }
+    .gallery{
+        grid-template-columns: repeat(7,1fr);
+    }
+    .contenedor_nav_down{
+        display: none;
     }
 }
