@@ -10,15 +10,19 @@ html {
 .header {
   border: black 0px solid;
   width: 100%;
+  height: 80px;
   display: flex;
   margin: 0rem;
   align-items: center;
   padding: 0rem;
 }
+
+.nav{
+  display: none;
+}
 /* left navigation styles */
 .pinterestlogo {
-  height: 3rem;
-  width: 5rem;
+  height: 4rem;
 }
 .pinterestlogo:hover {
   background-color: #efefef;
@@ -28,8 +32,18 @@ html {
   display: flex;
   width: 25%;
   align-items: center;
-  justify-content: space-around;
+  justify-items: center;
+  justify-content: space-evenly;
   margin-left: 1rem;
+}
+.left-nav-item{
+  width: 20%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 20px;
+  background-color: #efefef;
 }
 .left-nav-item:active {
   height: 6rem;
@@ -44,11 +58,12 @@ html {
 /* Buscador central */
 .buscador {
   width: 70%;
-  height: 6rem;
+  height: 4rem;
   border-radius: 50px;
   align-items: center;
   margin: 1rem;
   padding-left: 3rem;
+  background-color: #efefef;
 }
 /* right navigation styles */
 .right-nav {
@@ -74,7 +89,11 @@ html {
   height: 2rem;
   width: 2rem;
   margin-right: 3rem;
+  background-image: url(/PinterestClone-master/views/ImageView/image/flecha_abajo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 /* Estilos del grid */
 
 .main-container {
@@ -215,6 +234,124 @@ html {
     order: 5;
     width: 20%;
   }
+  .left-nav, .buscador,.right-nav,.list{
+    display: none;
+  }
+  .header{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 10px;
+  }
+  .header .nav {
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    display: flex;
+    background-color: #ffffffd5;
+    align-items: center;
+  }
+  /* estilos de etiqueta div dentro del nav, ancho de 30% que posteriormente se le cambia a buttons right*/
+  .button_left,
+  .buttons_right {
+    display: flex;
+    width: 30%;
+  }
+  a{
+    text-decoration: none;
+    }
+  /* estilos de etiqueta div dentro de button_left*/
+  .icon-chevron-left,
+  .icon-ellipsis-h {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 1.9rem;
+    text-align: center;
+    margin: auto 0px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #767676;
+  }
+  .icon-chevron-left::before,.icon-ellipsis-h::before{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+  }
+  .icon-chevron-left:hover {
+    cursor: pointer;
+  }
+  /* estilos a todos los hijos del nav*/
+  .nav > * {
+    display: flex;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  /* estilos al link de whatsapp*/
+  .link_nav {
+    text-decoration: none;
+    color: black;
+  }
+  /* estilos al contenedor de whats, share y save*/
+  .buttons_right {
+    width: 70%;
+    justify-content: flex-end;
+  }
+  /* margen izquierdo a los elementos hijos del contenedor derecho*/
+  .buttons_right > * {
+    margin-left: 10px;
+  }
+  /* estilos para el icono de whatsapp*/
+  .button_whats {
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(37, 211, 102);
+  }
+  /* estilos para el icono de share*/
+  .button_share {
+    height: 40px;
+    border-radius: 4px;
+    background-color: #efefef;
+  }
+  /*pading a los lados para el share*/
+  .icon-share-alt {
+    padding: 0px 15px;
+  }
+  /*estilos para centrar, tamaño color para los botones derechos*/
+  .icon-whatsapp,
+  .icon-share-alt,
+  .save {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+  }
+  .buttons_right .button_share .icon-share-alt{
+    margin: auto 0px;
+    line-height: 40px;
+  }
+  .icon-whatsapp::before{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+  }
+  /*estilos para centrar, tamaño color para los botones derechos*/
+  .save {
+    height: 40px;
+    border-radius: 4px;
+    padding: 0px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #e60023;
+  }
+  /*color para el icono de whatsapp*/
+  .icon-whatsapp {
+    color: white;
+  }
+  
   /* propiedades CSS a aplicar en ventanas de 980px o menos */
 }
 

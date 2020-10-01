@@ -1,204 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Pinterest</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="left-nav">
-        <img
-          src="https://1000marcas.net/wp-content/uploads/2019/12/Pinterest-Logo.png"
-          alt="pinterest logo"
-          class="pinterestlogo"
-        />
-        <button class="left-nav-item">Inicio</button>
-        <button class="left-nav-item">Hoy</button>
-        <button class="left-nav-item">Siguiendo</button>
-      </div>
-      <input class="buscador" type="text" placeholder="Buscar" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/PinterestClone-master/views/ImageView/css/normalize.css">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="/PinterestClone-master/views/ImageView/css/icomoon.css">
+  <title>Pinterest</title>
+</head>
 
-      <div class="right-nav">
-        <img
-          src="https://icons555.com/images/icons-gray/image_icon_appointment_reminders_pic_512x512.png"
-          alt="iconalert"
-          class="right-nav-button"
-        />
-        <img
-          src="https://www.iconfinder.com/data/icons/proglyphs-mailing-and-messaging/512/Chat_Active-512.png"
-          alt="bubble message icon"
-          class="right-nav-button"
-        />
-        <img
-          src="https://pbs.twimg.com/media/EUol1N-XsAgMHF5.jpg"
-          alt="perfil icon"
-          class="right-nav-profile"
-        />
-        <div class="list">
-          <input class="list-input" type="text" list="cuentas" />
-          <datalist id="cuentas">
-            <option value="Agregar otra cuenta"></option>
-            <option value="Agregar una cuenta para empresa gratis"></option>
-            <option value="Configuración"></option>
-            <option value="Mejora  tu feed de inicio"></option>
-            <option value="Instalar la aplicación de Windows"></option>
-            <option value="Obtener ayuda"></option>
-            <option value="Ver condiciones y privacidad"></option>
-            <option value="Salir"></option>
-          </datalist>
-        </div>
+<body>
+  <header class="header">
+    <div class="left-nav">
+      <img src="https://1000marcas.net/wp-content/uploads/2019/12/Pinterest-Logo.png" alt="pinterest logo"
+        class="pinterestlogo" />
+      <div class="left-nav-item">Inicio</div>
+      <div class="left-nav-item">Hoy</div>
+      <div class="left-nav-item">Siguiendo</div>
+    </div>
+    <input class="buscador" type="text" placeholder="Buscar" />
+    <div class="right-nav">
+      <img src="https://icons555.com/images/icons-gray/image_icon_appointment_reminders_pic_512x512.png" alt="iconalert"
+        class="right-nav-button" />
+      <img src="https://www.iconfinder.com/data/icons/proglyphs-mailing-and-messaging/512/Chat_Active-512.png"
+        alt="bubble message icon" class="right-nav-button" />
+      <img src="https://pbs.twimg.com/media/EUol1N-XsAgMHF5.jpg" alt="perfil icon" class="right-nav-profile" />
+      <div class="list">
+        <input class="list-input" type="text" list="cuentas" />
+        <datalist id="cuentas">
+          <option value="Agregar otra cuenta"></option>
+          <option value="Agregar una cuenta para empresa gratis"></option>
+          <option value="Configuración"></option>
+          <option value="Mejora  tu feed de inicio"></option>
+          <option value="Instalar la aplicación de Windows"></option>
+          <option value="Obtener ayuda"></option>
+          <option value="Ver condiciones y privacidad"></option>
+          <option value="Salir"></option>
+        </datalist>
       </div>
-    </header>
+    </div>
+    <nav class="nav">
+      <div class="button_left">
+        <a href="../../index.html">
+          <div class="icon-chevron-left"></div>
+        </a>
+        <div class="icon-ellipsis-h"></div>
+      </div>
+      <div class="buttons_right">
+        <a href="" class="link_nav">
+          <div class="icon-whatsapp button_whats"></div>
+        </a>
+        <div class="button_share">
+          <span class="icon-share-alt">Send</span>
+        </div>
+        <div class="save">Save</div>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <div class="main-container">
-        <div class="row one">
-          <a
-            href="./views/ImageView/index.html"
-            class="image-container tablet-image"
-          >
-            <img
-              class="grid-image"
-              src="https://picsum.photos/100/100/?random"
-            />
-          </a>
-          <a
-            href="./views/ImageView/index.html"
-            class="image-container-tall tablet-image"
-          >
-            <img
-              class="grid-image"
-              src="https://picsum.photos/610/300/?random"
-            />
-          </a>
-          <a
-            href="./views/ImageView/index.html"
-            class="image-container tablet-image"
-          >
-            <img
-              class="grid-image"
-              src="https://picsum.photos/250/200/?random"
-            />
-          </a>
-          <a
-            href="./views/ImageView/index.html"
-            class="image-container-tall tablet-image"
-          >
-            <img
-              class="grid-image"
-              src="https://picsum.photos/150/230/?random"
-            />
-          </a>
-        </div>
-        <div class="row two">
-          <a href="./views/ImageView/index.html" class="image-container-tall">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/320/600/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-container">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/630/300/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-container">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/280/200/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-container-tall">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/190/230/?random"
-            />
-          </a>
-        </div>
-        <div class="row three">
-          <a href="./views/ImageView/index.html" class="image-container">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/390/615/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-container-tall">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/610/340/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-container-tall">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/251/200/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-container">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/151/230/?random"
-            />
-          </a>
-        </div>
-        <div class="row four">
-          <a href="./views/ImageView/index.html" class="image-container">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/302/600/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-container">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/603/300/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-container-tall">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/254/200/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-container">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/155/230/?random"
-            />
-          </a>
-        </div>
-        <div class="row five">
-          <a href="./views/ImageView/index.html" class="image-container-tall">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/306/600/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-container">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/607/300/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-container-tall">
-            <img
-              class="grid-image"
-              src="https://picsum.photos/258/200/?random"
-            />
-          </a>
-          <a href="./views/ImageView/index.html" class="image-containers">
-            <img
-              class="grid-image last"
-              src="https://picsum.photos/159/230/?random"
-            />
-          </a>
-        </div>
+  <main>
+    <div class="main-container">
+      <div class="row one">
+        <a href="./views/ImageView/index.html" class="image-container tablet-image">
+          <img class="grid-image" src="https://picsum.photos/100/100/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container-tall tablet-image">
+          <img class="grid-image" src="https://picsum.photos/610/300/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container tablet-image">
+          <img class="grid-image" src="https://picsum.photos/250/200/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container-tall tablet-image">
+          <img class="grid-image" src="https://picsum.photos/150/230/?random" />
+        </a>
       </div>
-    </main>
-    <footer class="footer"></footer>
-  </body>
+      <div class="row two">
+        <a href="./views/ImageView/index.html" class="image-container-tall">
+          <img class="grid-image" src="https://picsum.photos/320/600/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container">
+          <img class="grid-image" src="https://picsum.photos/630/300/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container">
+          <img class="grid-image" src="https://picsum.photos/280/200/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container-tall">
+          <img class="grid-image" src="https://picsum.photos/190/230/?random" />
+        </a>
+      </div>
+      <div class="row three">
+        <a href="./views/ImageView/index.html" class="image-container">
+          <img class="grid-image" src="https://picsum.photos/390/615/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container-tall">
+          <img class="grid-image" src="https://picsum.photos/610/340/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container-tall">
+          <img class="grid-image" src="https://picsum.photos/251/200/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container">
+          <img class="grid-image" src="https://picsum.photos/151/230/?random" />
+        </a>
+      </div>
+      <div class="row four">
+        <a href="./views/ImageView/index.html" class="image-container">
+          <img class="grid-image" src="https://picsum.photos/302/600/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container">
+          <img class="grid-image" src="https://picsum.photos/603/300/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container-tall">
+          <img class="grid-image" src="https://picsum.photos/254/200/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container">
+          <img class="grid-image" src="https://picsum.photos/155/230/?random" />
+        </a>
+      </div>
+      <div class="row five">
+        <a href="./views/ImageView/index.html" class="image-container-tall">
+          <img class="grid-image" src="https://picsum.photos/306/600/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container">
+          <img class="grid-image" src="https://picsum.photos/607/300/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-container-tall">
+          <img class="grid-image" src="https://picsum.photos/258/200/?random" />
+        </a>
+        <a href="./views/ImageView/index.html" class="image-containers">
+          <img class="grid-image last" src="https://picsum.photos/159/230/?random" />
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
