@@ -1,295 +1,301 @@
-body{
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,icomoon;
-    position: relative;
-    box-sizing: border-box;
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, icomoon;
+  position: relative;
+  box-sizing: border-box;
 }
 
 /* estilos de header ancho alto y display flexbox*/
-.header{
-    width: 100%;
-    height: 68px;
-    display: flex;
+.header {
+  width: 100%;
+  height: 68px;
+  display: flex;
 }
 /* estilos de etiqueta nav dentro del header, ancho alto, posicion pegajosa, display flexbox y alineacion vertical de centro*/
-.header .nav{
-    width: 100%;
-    height: 68px;
-    position: fixed;
-    display: flex;
-    background-color: #ffffffd5 ;
-    align-items: center;
-
+.header .nav {
+  width: 100%;
+  height: 68px;
+  position: fixed;
+  display: flex;
+  background-color: #ffffffd5;
+  align-items: center;
 }
 /* estilos de etiqueta div dentro del nav, ancho de 30% que posteriormente se le cambia a buttons right*/
-.button_left, .buttons_right{
-    display: flex;
-    width: 30%;
+.button_left,
+.buttons_right {
+  display: flex;
+  width: 30%;
 }
 
 /* estilos de etiqueta div dentro de button_left*/
-.icon-chevron-left, .icon-ellipsis-h{
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    font-size: 1.4rem;
-    text-align: center;
-    margin-left: 5px;
-    cursor: pointer;
-    color:#767676;
+.icon-chevron-left,
+.icon-ellipsis-h {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-left: 5px;
+  cursor: pointer;
+  color: #767676;
+}
+.icon-chevron-left:hover {
+  cursor: pointer;
 }
 /* estilos a todos los hijos del nav*/
-.nav >*{
-    display: flex;
-    font-size: 1.5rem;
-    text-align: center;
+.nav > * {
+  display: flex;
+  font-size: 1.5rem;
+  text-align: center;
 }
 /* estilos al link de whatsapp*/
-.link_nav{
-    text-decoration: none;
-    color: black;
+.link_nav {
+  text-decoration: none;
+  color: black;
 }
 /* estilos al contenedor de whats, share y save*/
-.buttons_right{
-    width: 70%;
-    justify-content: flex-end;
+.buttons_right {
+  width: 70%;
+  justify-content: flex-end;
 }
 /* margen izquierdo a los elementos hijos del contenedor derecho*/
-.buttons_right >*{
-    margin-left: 10px;
+.buttons_right > * {
+  margin-left: 10px;
 }
 /* estilos para el icono de whatsapp*/
-.button_whats{
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgb(37, 211, 102);
+.button_whats {
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(37, 211, 102);
 }
 /* estilos para el icono de share*/
-.button_share{
-    height: 40px;
-    border-radius: 4px;
-    background-color: #efefef;
+.button_share {
+  height: 40px;
+  border-radius: 4px;
+  background-color: #efefef;
 }
 /*pading a los lados para el share*/
-.icon-share-alt{
-    padding: 0px 15px;
+.icon-share-alt {
+  padding: 0px 15px;
 }
 /*estilos para centrar, tamaño color para los botones derechos*/
-.icon-whatsapp,.icon-share-alt, .save{
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    font-size: 1.2rem;
-    text-align: center;
-    cursor: pointer;
-    color: black;
+.icon-whatsapp,
+.icon-share-alt,
+.save {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  color: black;
 }
 /*estilos para centrar, tamaño color para los botones derechos*/
-.save{
-    height: 40px;
-    border-radius: 4px;
-    padding: 0px 15px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    background-color: #e60023;
+.save {
+  height: 40px;
+  border-radius: 4px;
+  padding: 0px 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #e60023;
 }
 /*color para el icono de whatsapp*/
-.icon-whatsapp{
-    color: white;
+.icon-whatsapp {
+  color: white;
 }
 
 /*  Estilos para section de foto con sus textos y botones */
 
-section{
-    width: 100%;
-    font-size: 0.9rem;
+section {
+  width: 100%;
+  font-size: 0.9rem;
 }
-article{
-    margin-top: 5px;
+article {
+  margin-top: 5px;
 }
-.article_desktop{
-    display: none;
+.article_desktop {
+  display: none;
 }
-.image{
-    width: 100%;
-    margin: 0px;
-}
-
-.image img{
-    width: 100%;
-}
-.contenedor_visit{
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
+.image {
+  width: 100%;
+  margin: 0px;
 }
 
-.sold{
-    margin-left: 5px;
+.image img {
+  width: 100%;
+}
+.contenedor_visit {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sold a{
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-.button_visit{
-    width: 60px;
-    height: 40px;
-    margin: auto 0px;
-    margin-right: 7px;
-    line-height: 40px;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 4px;
-    background-color: #efefef;
+.sold {
+  margin-left: 5px;
 }
 
-.description{
-    margin-left: 7px;
+.sold a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.button_visit {
+  width: 60px;
+  height: 40px;
+  margin: auto 0px;
+  margin-right: 7px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: #efefef;
 }
 
-hr{
-    border-top: 1px solid #ddd;
-    width: 95%;
-    margin: 0px auto;
+.description {
+  margin-left: 7px;
 }
 
-.tittle{
-    margin: 0;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 1rem;
+hr {
+  border-top: 1px solid #ddd;
+  width: 95%;
+  margin: 0px auto;
 }
 
-.gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2px;
-    row-gap: 2px;
-    padding: 0px 5px;
+.tittle {
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
 }
 
-.gallery img{
-    border-radius: 10%;
-    cursor: pointer;
-    width: 100%;
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2px;
+  row-gap: 2px;
+  padding: 0px 5px;
+}
+
+.gallery img {
+  border-radius: 10%;
+  cursor: pointer;
+  width: 100%;
 }
 /*  nav_down   */
-.contenedor_nav_down{
-    height: 48px;
-    width: 100%;
-    position: relative;
+.contenedor_nav_down {
+  height: 48px;
+  width: 100%;
+  position: relative;
 }
-.nav_down{
-    height: 48px;
-    width: 100%;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.863);
-    bottom: 0px;
+.nav_down {
+  height: 48px;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.863);
+  bottom: 0px;
 }
 
-.ul_list_down{
-    height: 48px;
-    margin: 0px;
-    padding: 0px 2px;
-    font-size: 0.9rem;
+.ul_list_down {
+  height: 48px;
+  margin: 0px;
+  padding: 0px 2px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul_list_down a {
+  height: 48px;
+  width: auto;
+  text-decoration: none;
+  margin: 0px 5px;
+  padding: 0px 1px;
+}
+
+.ul_list_down a:hover {
+  background-color: rgba(128, 128, 128, 0.555);
+  box-sizing: border-box;
+  padding: 0px 30px;
+  border-radius: 10px;
+}
+.ul_list_down li {
+  height: 48px;
+  list-style: none;
+  color: #767676;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.ul_list_down .home_list {
+  color: black;
+}
+.home_list::before {
+  content: "\e900";
+  font-size: 1.5rem;
+}
+.video_list::before {
+  content: "\f144";
+  font-size: 1.6rem;
+}
+.not_list::before {
+  content: "\e951";
+  font-size: 1.6rem;
+}
+.saved_list::before {
+  content: "\f2be";
+  font-size: 1.6rem;
+  color: blue;
+}
+@media screen and (min-width: 760px) {
+  .sect_up {
+    width: 600px;
+    margin: 0px auto;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .ul_list_down {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 760px) {
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sect_up {
+    width: 1016px;
+    height: 821px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ul_list_down a{
-    height: 48px;
-    width: auto;
-    text-decoration: none;
-    margin: 0px 5px;
-    padding: 0px 1px;
-}
-
-.ul_list_down a:hover{
-    background-color: rgba(128, 128, 128, 0.555);
-    box-sizing: border-box;
-    padding: 0px 30px;
-    border-radius: 10px;
-}
-.ul_list_down li{
-    height: 48px;
-    list-style: none;
-    color: #767676;
-    margin-top: 5px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #767676, inset 2px 2px 5px #767676;
+  }
+  .tittle {
     text-align: center;
-}
-
-.ul_list_down .home_list{
-    color: black;
-}
-.home_list::before{
-    content: "\e900";
     font-size: 1.5rem;
-}
-.video_list::before{
-    content: "\f144";
-    font-size: 1.6rem;
+    margin: 15px 0px;
+  }
+  .image {
+    width: 468px;
+    margin: 15px;
+  }
 
-}
-.not_list::before{
-    content: "\e951";
-    font-size: 1.6rem;
-}
-.saved_list::before{
-    content: "\f2be";
-    font-size: 1.6rem;
-    color: blue;
-}
-@media screen and (min-width: 760px){
-    .sect_up{
-        width: 600px;
-        margin: 0px auto;
-    }
-    .gallery{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .ul_list_down{
-        justify-content: space-evenly;
-    }
-}
-@media screen and (min-width: 760px){
-    .gallery{
-        grid-template-columns: repeat(6,1fr);
-    }
-}
-
-@media screen and (min-width: 1440px){
-    .sect_up{
-        width: 1016px;
-        height: 821px;
-        display: flex;
-        margin: 0px auto;
-        margin-bottom: 15px;
-        border-radius: 20px;
-        box-shadow: 2px 2px 5px #767676, inset 2px 2px 5px #767676 ;
-    }
-    .tittle{
-        text-align: center;
-        font-size: 1.5rem;
-        margin: 15px 0px;
-    }
-    .image{
-        width: 468px;
-        margin: 15px;
-    }
-
-    .image img{
-        border-radius: 20px;
-    }
-    .gallery{
-        grid-template-columns: repeat(7,1fr);
-    }
-    .contenedor_nav_down{
-        display: none;
-    }
+  .image img {
+    border-radius: 20px;
+  }
+  .gallery {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .contenedor_nav_down {
+    display: none;
+  }
 }
